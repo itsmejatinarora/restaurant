@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🍽️ Foodie's Delight</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+          <li><a href="#booking-payment">Book Now</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>  
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to <span class="auto-type"></span></h1>
+            <p>Experience the finest flavors with a touch of elegance.</p>
+            <div class="buttons">
+                <a href="#menu" class="btn">View Menu</a>
+                <a href="#reservation" class="btn book">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+       <!-- About Us Section -->
+       <section class="about" id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="aboutusimg.png" alt="Restaurant">
+            </div>
+            <div class="about-content">
+                <h2>About <span>Foodie's Delight</span></h2>
+                <p>Welcome to <b>Foodie's Delight</b>, where we bring passion to the plate. Our restaurant is dedicated to providing an unforgettable dining experience with fresh ingredients, creative dishes, and a cozy ambiance.</p>
+                <p class="extra-text">With a team of expert chefs and warm hospitality, we craft meals that satisfy your taste buds and soul. Whether you're here for a romantic dinner, a family gathering, or a casual meal, we promise an experience filled with flavors and joy.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </section>
+
+     <!-- Gallery Section -->
+     <section class="gallery" id="gallery">
+        <h2>Our <span>Gallery</span></h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="pizza.jpg" alt="Pizza">
+            </div>
+            <div class="gallery-item">
+                <img src="burger.jpg" alt="Burger">
+            </div>
+            <div class="gallery-item">
+                <img src="pasta.jpg" alt="Pasta">
+            </div>
+            <div class="gallery-item">
+                <img src="dessert.jpg" alt="Dessert">
+            </div>
+            <div class="gallery-item">
+                <img src="momos.jpg" alt="momos">
+            </div>
+            <div class="gallery-item">
+                <img src="cocktail.jpg" alt="Cocktail">
+            </div>
+            <div class="gallery-item">
+                <img src="chicken.jpg" alt="chicken">
+            </div>
+            <div class="gallery-item">
+                <img src="samosa.jpg" alt="samosa">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our <span>Menu</span></h2>
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="starters">Starters</button>
+            <button class="tab-btn" data-category="main-course">Main Course</button>
+            <button class="tab-btn" data-category="desserts">Desserts</button>
+            <button class="tab-btn" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-item" data-category="starters">
+                <img src="Bruschetta.jpg" alt="Starter">
+                <h3>Bruschetta</h3>
+                <p>Grilled bread with tomato, garlic, and basil.</p>
+                <span class="price">$8.99</span>
+            </div>
+
+            <div class="menu-item" data-category="main-course">
+                <img src="Grilled Steak.jpg" alt="Main Course">
+                <h3>Grilled Steak</h3>
+                <p>Juicy steak with side vegetables.</p>
+                <span class="price">$18.99</span>
+            </div>
+
+            <div class="menu-item" data-category="desserts">
+                <img src="Chocolate Lava Cake.jpg" alt="Dessert">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Rich molten chocolate cake.</p>
+                <span class="price">$6.99</span>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <img src="classic mojito.jpg" alt="Drink">
+                <h3>Classic Mojito</h3>
+                <p>Refreshing mint and lime drink.</p>
+                <span class="price">$5.99</span>
+            </div>
+        </div>
+    </section>
+
+       <!-- Special Offers & Events Section -->
+       <section class="offers-events" id="offers-events">
+        <h2>Special <span>Offers & Events</span></h2>
+        
+        <div class="offers-container">
+            <div class="offer-card">
+                <img src="pizza.jpg" alt="Offer">
+                <div class="offer-content">
+                    <h3>Buy 1 Get 1 Free Pizza</h3>
+                    <p>Enjoy a free pizza with every order on Friday nights!</p>
+                    <p><strong>Offer Ends In:</strong></p>
+                    <div class="countdown" data-time="2025-10-25T23:59:59"></div>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <img src="wine.jpg" alt="Event">
+                <div class="offer-content">
+                    <h3>Wine Tasting Event</h3>
+                    <p>Join us for an exclusive wine tasting session this Saturday!</p>
+                    <p><strong>Event Starts In:</strong></p>
+                    <div class="countdown" data-time="2025-10-25T18:00:00"></div>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <img src="steak.jpg" alt="Event">
+                <div class="offer-content">
+                    <h3>Steak Night Special</h3>
+                    <p>Exclusive steak discounts every Wednesday. Don't miss it!</p>
+                    <p><strong>Offer Ends In:</strong></p>
+                    <div class="countdown" data-time="2025-10-18T22:00:00"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Catering Services Section -->
+    <section class="catering-services" id="catering">
+        <h2>Our <span>Catering Services</span></h2>
+        <p class="section-description">We offer high-quality catering services for all types of events, ensuring a delicious and memorable experience.</p>
+
+        <div class="catering-container">
+            <!-- Catering Features -->
+            <div class="catering-item">
+                <img src="buffet.jpg" alt="Buffet Catering">
+                <h3>Buffet Catering</h3>
+                <p>Enjoy a wide selection of dishes for your guests, prepared with the finest ingredients.</p>
+            </div>
+
+            <div class="catering-item">
+                <img src="meeting.jpg" alt="Corporate Events">
+                <h3>Corporate Events</h3>
+                <p>Professional catering for business meetings, conferences, and office parties.</p>
+            </div>
+
+            <div class="catering-item">
+                <img src="wedding.jpg" alt="Wedding Catering">
+                <h3>Wedding Catering</h3>
+                <p>Make your special day perfect with our custom wedding catering services.</p>
+            </div>
+        </div>
+
+        <!-- Catering Inquiry Form -->
+        <div class="catering-form-container">
+            <h3>Request a Catering Quote</h3>
+            <form id="cateringForm">
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="eventDetails">Event Details</label>
+                    <textarea id="eventDetails" name="eventDetails" rows="4" placeholder="Tell us about your event" required></textarea>
+                </div>
+
+                <button type="submit">Get a Quote</button>
+                <p class="success-message" id="successMessage">Your request has been submitted!</p>
+            </form>
+        </div>
+    </section>
+
+     <!-- Private Dining Section -->
+     <section class="private-dining" id="private-dining">
+        <h2>Exclusive <span>Private Dining</span></h2>
+        <p class="section-description">Experience an intimate and luxurious dining atmosphere tailored to your special occasions.</p>
+
+        <div class="dining-container">
+            <!-- Dining Features -->
+            <div class="dining-item">
+                <img src="luxury-ambiance.jpg" alt="Luxury Dining">
+                <h3>Luxury Setting</h3>
+                <p>Enjoy a personalized dining experience with elegant decor and a private ambiance.</p>
+            </div>
+
+            <div class="dining-item">
+                <img src="menu.jpg" alt="Custom Menu">
+                <h3>Custom Menu</h3>
+                <p>Work with our chefs to create a bespoke menu tailored to your preferences.</p>
+            </div>
+
+            <div class="dining-item">
+                <img src="service.jpg" alt="Exclusive Service">
+                <h3>Exclusive Service</h3>
+                <p>Experience top-tier service with dedicated staff catering to your every need.</p>
+            </div>
+        </div>
+
+        <!-- Private Dining Reservation Form -->
+        <div class="dining-form-container">
+            <h3>Request a Private Dining Reservation</h3>
+            <form id="diningForm">
+                <div class="input-group">
+                    <label for="guestName">Full Name</label>
+                    <input type="text" id="guestName" name="guestName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="guestEmail">Email Address</label>
+                    <input type="email" id="guestEmail" name="guestEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="guestCount">Number of Guests</label>
+                    <input type="number" id="guestCount" name="guestCount" placeholder="Enter number of guests" required min="1">
+                </div>
+
+                <div class="input-group">
+                    <label for="eventDetails">Event Details</label>
+                    <textarea id="eventDetails" name="eventDetails" rows="4" placeholder="Tell us about your event" required></textarea>
+                </div>
+
+                <button type="submit">Request Reservation</button>
+                <p class="success-message" id="successMessage">Your reservation request has been submitted!</p>
+            </form>
+        </div>
+    </section>
+
+       <!-- Customer Reviews Section -->
+       <section class="customer-reviews" id="reviews">
+        <h2>What Our <span>Customers Say</span></h2>
+
+        <div class="review-container">
+            <div class="review-card active">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+                <h3>Emma Johnson</h3>
+                <p>"The food was absolutely delicious, and the ambiance was perfect. Highly recommend!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review-card">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer">
+                <h3>Michael Smith</h3>
+                <p>"Great service and amazing dishes! The steak was cooked to perfection."</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review-card">
+                <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Customer">
+                <h3>Sophia Brown</h3>
+                <p>"Absolutely loved the desserts! A must-visit place for food lovers."</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <!-- Review Navigation -->
+        <div class="review-nav">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section" id="faq">
+        <h2>Frequently Asked <span>Questions</span></h2>
+        <p class="section-description">Have questions? We have answers! Check out our most common inquiries below.</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are your opening hours?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We are open Monday to Sunday from 10 AM to 10 PM.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer vegetarian options?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer a variety of vegetarian and vegan dishes.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I make a reservation?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can book a table online through our website or call us at +91 7464903933.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer delivery services?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer home delivery through our partner apps like Uber Eats and DoorDash.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I book private dining for events?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We have exclusive private dining options available. Contact us for details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Contact Us Section -->
+      <section class="contact-us" id="contact">
+        <h2>Contact <span>Us</span></h2>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <p class="success-message" id="successMessage">Your message has been sent!</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p><strong>Address:</strong> 123 abu lane , meerut , uttar pradesh , india</p>
+                <p><strong>Phone:</strong> +91 7464903933</p>
+                <p><strong>Email:</strong> foodie@restaurant.com</p>
+
+                <!-- Google Maps Embed -->
+                <div class="map">
+                    <iframe 
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=abu%20lane%20,%20meerut%20,%20uttar%20pradesh+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed""
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
